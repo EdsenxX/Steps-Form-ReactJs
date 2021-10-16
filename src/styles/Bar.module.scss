@@ -1,0 +1,30 @@
+.bar_item{
+    .icon{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .line{
+            width: 33.3333333333%;
+            height: 2px;
+            background: white;
+        }
+        i{
+            width: 33.3333333333%;
+        }
+    }
+    &:first-child{
+        .line_left{
+            opacity: 0;
+        }
+    }
+    &:last-child{
+        .line_right{
+            opacity: 0;
+        }
+    }
+    &.completed{
+        i, .line{
+            background: chartreuse;
+        }
+    }
+}
