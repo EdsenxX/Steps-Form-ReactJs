@@ -1,11 +1,12 @@
 // Components
 import Input from "../components/Input";
 import Form from "./Form";
-import Button from "./Buttons";
+import Button from "./Button";
 
 const FormAccount = (props) => {
   return (
     <Form
+      onSubmit={props.continue}
       title="Account Details"
       inputs={
         <>
@@ -24,9 +25,7 @@ const FormAccount = (props) => {
           />
         </>
       }
-      buttons={
-        <Button title="Continuar"/>
-      }
+      buttons={<Button title="Continuar" type="submit" />}
     />
   );
 };
