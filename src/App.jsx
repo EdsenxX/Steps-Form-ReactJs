@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.content} shadow-xl`}>
+      <div className={`${styles.content} shadow-2xl`}>
         <div className={styles.bar}>
           <Bar
             userCompleted={isUserComplete}
