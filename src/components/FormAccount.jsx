@@ -10,18 +10,29 @@ const FormAccount = (props) => {
       title="Account Details"
       inputs={
         <>
-          <Input title="User" name="user" icon="ri-user-line" type="text" />
+          <Input
+            title="User"
+            name="user"
+            icon="ri-user-line"
+            type="text"
+            value={props.data.user}
+            onChange={props.onChange}
+          />
           <Input
             title="Password"
             name="password"
             icon="ri-lock-line"
             type="password"
+            value={props.data.password}
+            onChange={props.onChange}
           />
           <Input
             title="Confirm Password"
             name="confirmPassword"
             icon="ri-lock-line"
             type="password"
+            value={props.data.confirmPassword}
+            onChange={props.onChange}
           />
         </>
       }
